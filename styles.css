@@ -287,5 +287,188 @@ html {
 
     /*Espacion inferior externo */
     margin-bottom: 20px;
+}
+
+
+/*SE EMPEZO A TRABAJA DESDE ACA 8 Mayo 2024*/
+
+.sobremi .contenido-seccion p span {
+
+    /*color a la letra*/
+    color: #1CB698;
+
+    /*se le da negrilla al texto*/
+    font-weight: bold;
 
 }
+
+.sobremi .fila {
+    /*los contenedores hijos los ubicamos en linea horizontal */
+    display: flex;
+}
+
+.sobremi .fila .col {
+    /*Un ancho a los dos contenedores hijos*/
+    width: 50%;
+}
+
+/*Estilos a subtitulos datos personales y intereses*/
+.sobremi .fila .col h3 {
+    /*Tamaño del Texto*/
+    font-size: 28px;
+
+    /*Aplicamos un estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Espacion inferior externo */
+    margin-bottom: 25px;
+}
+
+/*quita los estilo de viñetas o numeracion de una lista
+  ejemplo  * cumpleaños   -->  cumpleaños
+*/
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+/*Espacio externo en las etiqueta li que tienen 
+ cumpleaños telefono Email .... asi sucesivamente
+*/
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+/*Estilo a los items 
+  cumpleaños telefono Email .... asi sucesivamente
+*/
+.sobremi .fila .col ul li strong {
+
+    display: inline-block;
+    /*color a la palabra*/
+    color: #1CB698;
+    /*Ancho a la palabra*/
+    width: 130px;
+}
+
+
+/*Estilo a la palabra FREELANCE*/
+.sobremi .fila .col ul li span {
+
+    /*Color de fondo al textp*/
+    background-color: #1CB698;
+    /*Espacio interno */
+    padding: 3px;
+
+    /*se le da negrilla al texto*/
+    font-weight: bold;
+
+    /*cambia la forma de las puntas o esquinas de los bordes del texto*/
+    border-radius: 5px;
+}
+
+
+
+/*Posicion a los elementos hijos del contenedor Div  contenedor-intereses*/
+.sobremi .fila .col .contenedor-intereses {
+
+    /*ubica los elementos en linea*/
+    display: flex;
+
+    /*Elementos se distribuyen en varias lineas cuando se a la ocacion*/
+    flex-wrap: wrap;
+
+}
+
+/*Estilos a elementos del contenedor Div intereses   */
+.sobremi .fila .col .contenedor-intereses .interes {
+    /*ancho contenedor*/
+    width: 100px;
+    /*altura contenedor*/
+    height: 100px;
+    /*color de fondo al contenedor*/
+    background-color: #252A2E;
+    /*cambia la forma de las puntas o esquinas de los bordes del contenedor*/
+    border-radius: 10PX;
+    /*Espacio externo entre contenedores*/
+    margin: 0 15px 15px 0;
+    /*Ubica los elementos del contenedor fila*/
+    display: flex;
+    /*cambia la posicion de elementos del contenedor en filas*/
+    flex-direction: column;
+    /*centra en el eje secundario*/
+    align-items: center;
+    /*centra en el eje principal*/
+    justify-content: center;
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .3s;
+}
+
+
+/*APLICAMOS UN EFECTO HOVER*/
+/*permite que cambie de color una palabra  cuando se coloca el puntero del mouse encima*/
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: #1CB698;
+}
+
+
+
+/*Estilo a los  iconos del contenedor div interes*/
+.sobremi .fila .col .contenedor-intereses .interes i {
+    /*tamaño al icono*/
+    font-size: 30px;
+    /*Espacio externo*/
+    margin-bottom: 10px;
+}
+
+
+/*Elemento button que tiene  Descargar*/
+
+.sobremi button {
+    /*cambia la figura del puntero del mouse*/
+    /*Este caso un mano señalando*/
+    cursor: pointer;
+    /*color transparente*/
+    background-color: transparent;
+    /*definimos el borde del boton*/
+    border: 2px solid #fff;
+    /*ajustar automaticamnete el ancho de un elemento*/
+    width: fit-content;
+
+    display: block;
+    /*Espacio externo del boton*/
+    margin: 20px auto;
+    /*Espacio interno*/
+    padding: 10px 22px;
+
+    /*aplica tamaño al boton*/
+    font-size: 16px;
+
+    /*color al texto dentro boton*/
+    color: #fff;
+
+    /**/
+    position: relative;
+    z-index: 10;
+}
+
+
+
+/*INVESTIGAR */
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/*-----------------------------*/
