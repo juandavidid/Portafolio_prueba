@@ -1,0 +1,291 @@
+/*Importamos Las fuentes para la letra*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+* {
+
+    box-sizing: border-box;
+    /*Permite que lo que se defina de aplique automaticamente a los mas elementos*/
+    font-family: 'Work Sans';
+    /*aplico el tipo de fuente*/
+
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    /*permite deslizar cuando hago clic en los link del menu*/
+    /*genera un desplazamineto mas suave y no brusco*/
+    scroll-behavior: smooth;
+}
+
+/*MENU*/
+.contenedor-hearder {
+
+    background: #1e2326;
+
+    /*El contenendor se queda fijo*/
+    position: fixed;
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*Posicion el elemento si se ve primero*/
+    z-index: 99;
+}
+
+.contenedor-hearder header {
+    /*ancho maximo que puede tener el elemento*/
+    max-width: 1100px;
+
+    margin: auto;
+
+    /*ubica los elementos hijos en forma vertical*/
+    display: flex;
+    /*El espacio restante se distribuye entre los elementos*/
+    justify-content: space-between;
+
+    /*centra los elementos en el eje secundario*/
+    align-items: center;
+
+    /*Genera espacio interno dentro del contenedor*/
+    padding: 15px 20px;
+
+}
+
+.contenedor-hearder header .logo a {
+    /*aplica estilo de fuente al palabra*/
+    font-family: 'Righteous';
+    /*Se le da Tamaño al palabra*/
+    font-size: 36px;
+
+    /*color al palabra*/
+    color: #1CB698;
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+}
+
+.contenedor-hearder header ul {
+    /*ubica los elementos hijos en forma vertical*/
+    display: flex;
+
+    /*quita los estilo de viñetas o numeracion de una lista*/
+    list-style: none;
+}
+
+.contenedor-hearder header nav ul li a {
+    /*elemento*/
+    text-align: none;
+    /*Color a las palabras*/
+    color: #fff;
+
+    /*Espacio externo de cada una de las palabras*/
+    margin: 0px 15px;
+    /*Espacio interno de cada una de las palabras*/
+    padding: 3px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .5s;
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+}
+
+
+/*APLICAMOS UN EFECTO HOVER*/
+/*permite que cambie de color una palabra  cuando se coloca el puntero del mouse encima*/
+.contenedor-hearder header nav ul li a:hover {
+    /*color de fondo para las palabras y el cambio*/
+    color: #1CB698;
+}
+
+
+/*ESTRUCTURA RESPONSIVE*/
+.nav-responsive {
+    /*Color de fondo al contenedor div*/
+    background-color: #1CB698;
+    /*Color a sus elementos internos en este caso la lineas horizontales del icono barra menu*/
+    color: #fff;
+
+    /*Espacio interno del contenedor*/
+    padding: 5px 10px;
+
+    /*cambia la forma de las puntas de los bordes del contenedor*/
+    border-radius: 5px;
+
+    /*cambia la figura del puntero del mouse*/
+    /*Este caso un mano señalando*/
+    cursor: pointer;
+
+    /*Se quita el elemento del sitio web*/
+    display: none;
+}
+
+/*--SECCION INICIO--*/
+.inicio {
+    /*degrada el color en una parte claro y otra parte oscuro con una imagen de fondo*/
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(./img/fondo.jpg);
+
+    /*define el tamaño de fondo de la imagen*/
+    /*la imagen se acomoda al tamaño del contenedor*/
+    background-size: cover;
+
+    /*El contenedor ocupa el 100% de altura del body*/
+    height: 100vh;
+
+    /*color a la letras*/
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.inicio .contenido-banner {
+    /*Espacio interno de cada uno de los elementos*/
+    padding: 20px;
+
+    /*color de fondo al contenedor*/
+    background-color: #1e2326;
+
+    /*define el ancho maximo*/
+    max-width: 350px;
+
+    /*Centra automatica el contenedor donde lo este ubicado de contenedor Padre*/
+    margin: auto;
+
+    /*Centra los elemento del contenedor*/
+    text-align: center;
+
+
+    /*cambia la forma de las puntas o esquinas de los bordes del contenedor*/
+    border-radius: 40px;
+
+}
+
+.inicio .contenido-banner img {
+
+    /*Espacio externo superior*/
+    margin-top: 40px;
+    /*tamaño figura y color al borde*/
+    border: 10px solid #1CB698;
+
+    display: block;
+
+    /*ancho de la imagen*/
+    width: 80%;
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+
+    /*cambia la forma de las puntas o esquinas de los bordes de la imagen*/
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+    /*Espacio externo superior*/
+    margin-top: 40px;
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 42px;
+
+    /*Se coloca un estilo de fuente Nombre*/
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2 {
+    /*Se le da Tamaño al palabra*/
+    font-size: 15px;
+
+    /*define el groso de la letra o texto*/
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a {
+    /*color a los  iconos */
+    color: #fff;
+
+    display: inline-block;
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+    /*define el borde de los iconos*/
+    border: 1px solid #fff;
+
+    /*cambia la forma de las puntas o esquinas de los bordes de los iconos*/
+    border-radius: 100%;
+
+    /*le damos ancho al circulo de los iconos*/
+    width: 42px;
+
+    /*le damos altura al circulo de los iconos*/
+    height: 42px;
+
+    /*Se aplica un altura */
+    line-height: 42px;
+
+    /*Espacio externo de los iconos*/
+    margin: 40px 5px;
+
+    /*le da tamaño a los inconos*/
+    font-size: 20px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .3s;
+
+}
+
+/*APLICAMOS UN EFECTO HOVER*/
+/*permite que cambie de color una palabra  cuando se coloca el puntero del mouse encima*/
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+/*SECCION SOBRE MI*/
+
+.sobremi {
+    /*Color de fondo al seccion sobre mi*/
+    background-color: #1e2326;
+    /*color al texto y elementos*/
+    color: #fff;
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.sobremi h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p {
+    font: 18px;
+
+    /*Se aplica un espacion entre cada linea de cada texto de un parrafo */
+    line-height: 22px;
+
+    /*Espacion inferior externo */
+    margin-bottom: 20px;
+
+}

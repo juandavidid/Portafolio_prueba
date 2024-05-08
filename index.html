@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--Importar Iconos-->
+    <!--1.Icono del Menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+     <!--Ruta de los estilos-->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+
+    <div class="contenedor-hearder">
+         
+        <!--Contenedor header-->
+        <header>
+
+            <!--Logo-->
+            <div class="logo">
+                <a href="#">Nick</a>
+            </div>
+           
+            <!--Estructura del Menu-->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#Inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <!--Estructura Responsive-->
+            <div class="nav-responsive">
+                <!--Icono del Menu-->
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+
+
+
+        </header>
+
+    </div>
+
+    <!--SECCION DE INICIO-->
+    <section id="inicio" class="inicio">
+
+        <!-- -->
+        <div class="contenido-banner">
+            
+            <!--Contenedor Imagen perfil-->
+            <div class="contenedor-img">
+                <img src="./img/hero.png" alt="">
+            </div>
+            <h1>NICK PEREZ</h1>
+            <h2>Ingeniero de software -Experto UI/UX</h2>
+
+             <!--Iconos de las redes sociales-->
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Nick Perez.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dolorum ab in recusandae quos nisi temporibus et repellat neque accusantium cumque accusamus laborum 
+            necessitatibus id, porro, iste dolorem consequuntur? Autem, possimus!</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-01-1980
+                        </li>
+
+                        <li>
+                            <strong>Telefono</strong>
+                            2555 5454545
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cw@example.com
+                        </li>
+
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+
+                        <li>
+                            <strong>Direccion</strong>
+                            123 San luis, Argentina
+                        </li>
+
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <!--Icono de Juegos-->
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+
+                        <!--Icono de Musicca-->
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+
+                        <!--Incono de VIAJAR-->
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+
+                         <!--Incono de apple-->
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+
+                         <!--Incono de deporte-->
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+
+                        <!--Incono de  libros-->
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+
+                        <!--Incono de  Carros-->
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+
+                        <!--Incono de  -->
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span  class="overlay"></span>
+            </button>
+        </div>
+
+    </section>
+</body>
+</html>
