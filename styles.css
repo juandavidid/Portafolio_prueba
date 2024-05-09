@@ -422,7 +422,7 @@ html {
 }
 
 
-/*Elemento button que tiene  Descargar*/
+/*Elemento button que tiene la palabra  Descargar*/
 
 .sobremi button {
     /*cambia la figura del puntero del mouse*/
@@ -441,7 +441,7 @@ html {
     /*Espacio interno*/
     padding: 10px 22px;
 
-    /*aplica tamaño al boton*/
+    /*aplica tamaño a la letra*/
     font-size: 16px;
 
     /*color al texto dentro boton*/
@@ -449,26 +449,89 @@ html {
 
     /**/
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }
 
 
 
 /*INVESTIGAR */
 
+/*Efecto de superposicion*/
+
 .sobremi button .overlay {
+    /*la etiqueta la defino como una posicion absoluta
+      para que se muestre en segundo plabo
+    */
     position: absolute;
+    /*Definimos inicial mente su parametros */
+    /*Espacio superior*/
     top: 0;
+    /*Espacio izquierdo*/
     left: 0;
+    /*definimos un ancho inicial de 0  para que no se active el color
+      o no se  extienda dentro el cuadro del boton
+    */
     width: 0;
+    /*Definimos un altura inicial*/
     height: 100%;
+    /*color de fondo cuando cuando se active el ancho*/
     background-color: #1CB698;
+    /*los efecto de la etiqueta  se muestra detras del contenido del boton*/
     z-index: -1;
+    /*Tiempo en que se va aplicar los estilos a la etiqueta <span>
+      en este caso el ancho y el color 
+    */
     transition: 1s;
 }
+
+/*se aplica efecto hover tanto al boton y se envia 
+  una anchura a la etiqueta <span> para que se actibe su color
+*/
 
 .sobremi button:hover .overlay {
     width: 100%;
 }
 
 /*-----------------------------*/
+
+
+
+/*SECCION SKILLS*/
+/*Se aplica estilo al contenedor general que contiene elementos del tema Skills */
+
+.skills {
+    /*Color de fondo al seccion sobre mi*/
+    background-color: #252A2E;
+    /*color al texto y elementos*/
+    color: #fff;
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.skills h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+.skills .fila {
+    /*El boque padre y el hijo se colocan en modo  fila*/
+    display: flex;
+}
