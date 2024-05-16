@@ -496,7 +496,8 @@ html {
 
 
 
-/*SECCION SKILLS*/
+/*-----------------------------------------SECCION SKILLS---------------------------------------*/
+
 /*Se aplica estilo al contenedor general que contiene elementos del tema Skills */
 
 .skills {
@@ -534,4 +535,508 @@ html {
 .skills .fila {
     /*El boque padre y el hijo se colocan en modo  fila*/
     display: flex;
+}
+
+
+
+/*Contenedor Class=col*/
+.skills .fila .col {
+    /*se aplico un ancho al contenedor Padre class=col*/
+    width: 50%;
+    /*Se aplico un espacio interno al contenedor Padre class=col
+    en la parte izquierda y derecha*/
+    padding: 0 20px;
+}
+
+
+/*Aplica Estilos  a los subtitulos   Tehnical Skills  y  Professional Skills */
+.skills .fila .col h3 {
+
+    /*Tamaño del Texto*/
+    font-size: 28px;
+
+    /*Aplicamos un estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Espacion inferior externo */
+    margin-bottom: 25px;
+
+}
+
+/*Aplica estilos a las Habilidades que estan en la etiqueta <span>*/
+.skills .skill>span {
+    /*Se resalto el texto*/
+    font-weight: bold;
+    /*Su ubicacion como caja se coloco como bloke es decir posicion horizontal*/
+    display: block;
+    /*Se aplico un espacion Externo inferior*/
+    margin-bottom: 10px;
+}
+
+/*Se aplico estilos a la barra de Progreso*/
+.skills .skill .barra-skill {
+    /*Altura de a la barra de progreso*/
+    height: 8px;
+    /*Se redujo su ancho*/
+    width: 80%;
+    /*Color de fondo a la barra*/
+    background-color: #131517;
+    /*Elemento queda posicionado por detras de los demas  elemetos */
+    position: relative;
+    /*Aplica un espacion Externo entre lo demas elemento hermannos*/
+    margin-bottom: 30px;
+
+}
+
+/* barra de progreso dinamica color verde*/
+.skills .skill .progreso {
+    /*Le dio color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Elemento se posicion en este caso en la equina superiro izquierda de su padre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*Se le  da la  Altura igual al de su padre contenedor barra-skill*/
+    height: 8px;
+
+}
+
+/*Estilos para el valor que tiene la etiqueta <span> del porcentanje de las habilidades, ejemplo 75% */
+.skills .skill .barra-skill span {
+    /*Elemento se posicion en este caso en la equina superior izquierda de su padre*/
+    position: absolute;
+    /*Se le da una altura al elemento*/
+    height: 40px;
+    /*Se le da un ancho*/
+    width: 40px;
+    /*Se le da un color de fondo*/
+    background-color: #1CB698;
+    /*Las esquina de los bordes pasan a ser redondas*/
+    border-radius: 50px;
+    /*Se aplica un espacio entre lineas , al valor  que tiene adentro la etiqueta <span>*/
+    line-height: 40px;
+    /*Se centra el valor que esta en la etiqueta <span>*/
+    text-align: center;
+    /*se desplaza el circulo (generado por estilo css) de abajo hacia arriba*/
+    top: -17px;
+    /*se desplaza el circulo (generado por estilo css) de izquierda a derecha*/
+    right: -15px;
+    /*Se le da tamaño al valor que esta dentro de la etiqueta <span>*/
+    font-size: 14px;
+}
+
+
+
+/*Estas clases se agregan dinamicamnete mediante Javascripts*/
+
+/*Estilo de animacion para la barra de progreso dinamico
+  y El circulo que contiene el valor de porcentaje*/
+.skills .skill .javascript {
+
+    width: 0%;
+    /*Estilo de Movimiento a un elemento
+      1. animation --> estilo de movimiento
+      2. 2s --> el tiempo que tarda en moverse elemento
+      3. javascript --> Elemento((div span etc)  en HTML se le va aplicar el estilo 
+      4. forwards --> permite que el movimiento se mantenga en su estado final y no retroceda a su estado inicial  
+      
+      @keyframes nombreDeLaAnimacion {
+         Definición de los estados de estilo en diferentes puntos de la animación 
+       }
+    */
+    animation: 2s javascript forwards;
+}
+
+
+/*Reglas  de animacion @keyframes que permite controlar  los cambios de estilos de un elemento
+ 
+  En este caso el elemento va hacer un movimiento de izquierda a derecha
+  esto se da debido a que cuando elemento padre se le difine su ancho el elemento
+  hijo se puede desplazar y esto es gracias a la propiedad animatio:; y @keyframes
+*/
+@keyframes javascript {
+
+    /*Posicion Inicial*/
+    from {
+        /*Elemento actual inicia con ancho 0%*/
+        width: 0%;
+    }
+
+    /*Posicion final*/
+    to {
+        /*Elemento actual finaliza con un ancho 100%*/
+        width: 75%;
+    }
+}
+
+
+.skills .skill .htmlcss {
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 89%;
+    }
+}
+
+
+
+.skills .skill .Photoshop {
+    width: 0%;
+    animation: 2s Photoshop forwards;
+}
+
+@keyframes Photoshop {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 95%;
+    }
+}
+
+
+
+.skills .skill .Wordpress {
+    width: 0%;
+    animation: 2s Wordpress forwards;
+}
+
+@keyframes Wordpress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 81%;
+    }
+}
+
+
+
+.skills .skill .Drupa {
+    width: 0%;
+    animation: 2s Drupa forwards;
+}
+
+@keyframes Drupa {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 55%;
+    }
+}
+
+
+
+.skills .skill .comunicacion {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+
+.skills .skill .trabajo-en-equipo {
+    width: 0%;
+    animation: 2s trabajo-en-equipo forwards;
+}
+
+@keyframes trabajo-en-equipo {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+.skills .skill .Creatividad {
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+
+@keyframes Creatividad {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 99%;
+    }
+}
+
+.skills .skill .Dedicacion {
+    width: 0%;
+    animation: 2s Dedicacion forwards;
+}
+
+@keyframes Dedicacion {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+.skills .skill .Proyecto {
+    width: 0%;
+    animation: 2s Proyecto forwards;
+}
+
+@keyframes Proyecto {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 94%;
+    }
+}
+
+/*--------------Estilo de animacion final de los estilos----------------------------------------*/
+
+
+/*--------------------------SECCION CURRICULUM----------------------------------------------------*/
+
+
+/*Se aplica estilo al contenedor general que contiene elementos del tema Skills */
+
+.curriculum {
+    /*Color de fondo al seccion sobre mi*/
+    background-color: #1e2326;
+    /*color al texto y elementos*/
+    color: #fff;
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.curriculum h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+.curriculum .fila {
+    /*El boque padre y el hijo se colocan en modo  fila*/
+    display: flex;
+    /*los elementos hijos se acomodan con el espacio restante que hay en el contenedor*/
+    justify-content: space-between;
+}
+
+
+/*Aplico un ancho y un espacio interno
+  A los contenedores 
+  <!--Contenedor que tiene informacion  Educacion-->
+  <!--Contenedor que tiene informacion  Experiencia laboral-->
+*/
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+
+/*Aplica Estilos  a los subtitulos   Educacion  y  Experencia de Trabajo */
+.curriculum .fila .col h3 {
+
+    /*Tamaño del Texto*/
+    font-size: 28px;
+
+    /*Aplicamos un estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Espacion inferior externo */
+    margin-bottom: 25px;
+
+}
+
+/*Estilo al borde del contenedor izquierdo parte izquierda
+*/
+.curriculum .fila .izquierda {
+    border-right: 2px solid #252A2E;
+}
+
+/*Estilo al borde del contenedor derecho  parte derecha
+*/
+.curriculum .fila .derecha {
+    border-left: 2px solid #252A2E;
+}
+
+
+/*
+ Estilo a los contenedores que tienen los items  tanto de la parte izquierda y derecha 
+
+ Aplico  Espacio interno, Espacio externo, un color de fondo y position relativa   */
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+
+/*Estilo a unos de los items Arte y Multimedia
+  Aplico tamaño a la letra  y Espacio externo 
+*/
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*Estilo a la letra: Universidad de Oxford */
+.curriculum .fila .item .casa {
+    /*Color al texto*/
+    color: #1CB698;
+    /*Tamaño a la letra */
+    font-size: 22px;
+    /*Estilo de Negriña a la letra que resalte mas*/
+    font-weight: bold;
+    /*Su posicion de bloque seria en forma Vertical*/
+    display: block;
+
+}
+
+/*Estio a la letra: 2005 - 2008*/
+.curriculum .fila .item .fecha {
+    /*Su posicion de bloque seria en forma Vertical*/
+    display: block;
+    /*Color al texto*/
+    color: #1CB698;
+    /*Espacio externo inferior*/
+    margin-bottom: 10px;
+}
+
+/*Estilo al parrafo: que esta en la etiqueta <p><p>*/
+.curriculum .fila .item p {
+    /*Espacio entre lineas*/
+    line-height: 24px;
+}
+
+/*Estilo al borde derecho del contenedor izquierdo de los items*/
+.curriculum .fila .izq {
+    /*borde derecho*/
+    border-right: 2px solid #1CB698;
+    /*Espacio derecho*/
+    margin-right: 20px;
+}
+
+/*Estilo al borde derecho del contenedor derecho de los items*/
+.curriculum .fila .der {
+    /*borde izquierdo*/
+    border-left: 2px solid #1CB698;
+    /*Espacio izquierdo*/
+    margin-left: 20px;
+}
+
+/*Se le da estilo contenerdor conectori*/
+.curriculum .fila .item .conectori {
+    /*Altura*/
+    height: 2px;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se define un ancho*/
+    width: 47px;
+    /*Se le da la ubicacion al contenedor posicion absoluta*/
+    position: absolute;
+    /*Desplazar hacia a bajo*/
+    top: 50%;
+    /*Desplazar hacia a la derecha*/
+    right: -47px;
+    /*Se posiciona de los de mas elementos*/
+    z-index: 5;
+}
+
+/*Se le da estilo contenedor class= "circuloi"*/
+.curriculum .fila .item .conectori .circuloi {
+
+    display: block;
+    /*Altura*/
+    height: 10px;
+    /*Se define un ancho*/
+    width: 10px;
+    /*Se le da estilo a los borde */
+    border-radius: 50%;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se empuja el elemento a la derecha*/
+    float: right;
+    /*Se le da la ubicacion al contenedor posicion relativa*/
+    position: relative;
+    /*se  despla el elemento hacia arriba*/
+    bottom: 4px;
+}
+
+
+.curriculum .fila .item .conectord {
+    /*Altura*/
+    height: 2px;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se define un ancho*/
+    width: 47px;
+    /*Se le da la ubicacion al contenedor posicion absoluta*/
+    position: absolute;
+    /*Desplazar hacia a bajo*/
+    top: 50%;
+    /*Desplazar hacia a la derecha*/
+    left: -47px;
+    /*Se posiciona de los de mas elementos*/
+    z-index: 5;
+}
+
+/*Se le da estilo contenedor class= "circuloi"*/
+.curriculum .fila .item .conectord .circulod {
+
+    display: block;
+    /*Altura*/
+    height: 10px;
+    /*Se define un ancho*/
+    width: 10px;
+    /*Se le da estilo a los borde */
+    border-radius: 50%;
+    /*Color de fondo al contenedor*/
+    background-color: #1CB698;
+    /*Se empuja el elemento a la derecha*/
+    float: left;
+    /*Se le da la ubicacion al contenedor posicion relativa*/
+    position: relative;
+    /*se  despla el elemento hacia arriba*/
+    bottom: 4px;
 }
