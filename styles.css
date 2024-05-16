@@ -1042,4 +1042,127 @@ html {
 }
 
 
-/* Hasta aqui termine el dia de hoy*/
+/* Hoy Empiezo aca 16 de Mayo de 2024*/
+
+/*-----------------------SECCION PORTFOLIO----------------------------------*/
+
+/*Se aplica estilo al contenedor general que contiene elementos del tema Skills */
+
+.portfolio {
+    /*Color de fondo al seccion sobre mi*/
+    background-color: #252A2E;
+    /*color al texto y elementos*/
+    color: #fff;
+
+    /*Espacio interno entre los elementos*/
+    padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+
+    max-width: 1100px;
+
+    /*Espacio externos como izquierdo y derecho se acomodan automaticamente*/
+    margin: auto;
+}
+
+.portfolio h2 {
+
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+
+/*Class = galeria  */
+
+.portfolio .galeria {
+    /*Los elementos se ubican en fila*/
+    display: flex;
+    /*Permite que lo elementos se acomoden automaticamente en fila si no caben el sitio web*/
+    flex-wrap: wrap;
+    /*Agrega espacios antes del primer elemento y despues del ultimo*/
+    justify-content: space-around;
+}
+
+/*Class = proyecto*/
+.portfolio .galeria .proyecto {
+    /*Posicion al contenedor*/
+    position: relative;
+    /*Anchura Maxima al contenedor*/
+    max-width: 340px;
+    /*Altura que se ajuste para mostrar el contenido*/
+    height: fit-content;
+    /*Espacio externo*/
+    margin: 10px;
+    /*Cambia figura del puntero o icono del Mouse*/
+    cursor: pointer;
+}
+
+
+/*Class = img*/
+.portfolio .galeria .proyecto img {
+    /*Ancho de la imagen */
+    width: 100%;
+    display: block;
+}
+
+
+/*Class = overlay*/
+.portfolio .galeria .proyecto .overlay {
+    /*Posicion el contenedor primero que los demas hijos */
+    position: absolute;
+    top: 0;
+    /*Ancho*/
+    width: 100%;
+    /*Altura*/
+    height: 100%;
+    /*Centra el contenido*/
+    text-align: center;
+    /*Propieda que liner-gradient(color1,color2);
+      -permite ubicar cada color en fila
+      -El cuarto numero, permite que el color se vuelva claro
+    */
+    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
+    /*Posiciona lo elemento en fila o columna*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*----------------------------------------*/
+    /*Genera una trasicion en tiempo, para aplicar el estilo*/
+    transition: 1s;
+    /*Tamaño a la letra*/
+    font-size: 18px;
+    /*Define un espacio entre caracteres de forma horizontal*/
+    letter-spacing: 3px;
+    /*Define qué tan opaco es el elemento. o transparente*/
+    opacity: 0;
+
+}
+
+/*h3*/
+.portfolio .galeria .proyecto .overlay h3 {
+    /*Margen inferior*/
+    margin-bottom: 20px;
+    /*Genera una trasicion en tiempo, para aplicar el estilo*/
+    transition: 1s;
+}
+
+/*Se aplica efecto hover para activar la propieda opacity*/
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+/*Se aplica efecto hover para cambiar el valor de la propieda margin-bottom*/
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/*--------------------------FIN DE SECCION PORTAFOLIO---------------------------------*/
