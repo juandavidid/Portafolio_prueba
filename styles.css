@@ -1042,7 +1042,7 @@ html {
 }
 
 
-/* Hoy Empiezo aca 16 de Mayo de 2024*/
+
 
 /*-----------------------SECCION PORTFOLIO----------------------------------*/
 
@@ -1166,3 +1166,150 @@ html {
 }
 
 /*--------------------------FIN DE SECCION PORTAFOLIO---------------------------------*/
+
+/* Hoy Empiezo aca 16 de Mayo de 2024*/
+
+
+/*------------------SECCION CONTACTO---------------------------------------*/
+
+
+/*Class = contacto*/
+.contacto {
+    /*permite colocar una Imagen de fondo*/
+    background-image: url(img/contact_bg.png);
+    /*Color de fondo*/
+    background-color: #1e2326;
+    /*color a las letras*/
+    color: #fff;
+    /*Espacio interno*/
+    padding: 50px 0;
+}
+
+/*Class = contenido-seccion*/
+.contacto .contenido-seccion {
+    /*Ancho Maximo*/
+    max-width: 1100px;
+    /*Espacio Externo auto,  centra el contenedor horizontalmente*/
+    margin: auto
+}
+
+/*Class : h2*/
+.contacto h2 {
+    /*Se le da Tamaño al palabra*/
+    font-size: 48px;
+    /*Se aplica estilo de fuente*/
+    font-family: 'Righteous';
+
+    /*Centro el subtitulo*/
+    text-align: center;
+
+    /*Espacion interno superiro e inferior*/
+    padding: 20px 0;
+}
+
+/*Class= fila*/
+.contacto .fila {
+    /*los contenedores hijos se posicionan en modo horizontal*/
+    display: flex;
+}
+
+/*Class = col  Contenedores de Fomulario y Mapa*/
+.contacto .col {
+    /*Ancho a los contenedores*/
+    width: 50%;
+    /*Espacio interno*/
+    padding: 10px;
+    /*Posicion a los contenedores*/
+    position: relative;
+}
+
+
+/*input y textarea*/
+.contacto .col input,
+.contacto .col textarea {
+    /*los Elementos de ubican en vertical*/
+    display: block;
+    /*Ancho de elemento*/
+    width: 100%;
+    /*Espacio interno*/
+    padding: 18px;
+    /*sin borde el elemento*/
+    border: none;
+    /*Espacion externo superior*/
+    margin-bottom: 20px;
+    /*Color de fondo*/
+    background-color: #252A2E;
+    /*aplica color a letra*/
+    color: #fff;
+    /*Tamaño a letra*/
+    font-size: 18px;
+}
+
+
+/*Button */
+
+.contacto button {
+    /*cambia la figura del puntero del mouse*/
+    /*Este caso un mano señalando*/
+    cursor: pointer;
+    /*color transparente*/
+    background-color: transparent;
+    /*definimos el borde del boton*/
+    border: 2px solid #fff;
+    /*ajustar automaticamnete el ancho de un elemento*/
+    width: fit-content;
+
+    display: block;
+    /*Espacio externo del boton*/
+    margin: 20px auto;
+    /*Espacio interno*/
+    padding: 10px 22px;
+
+    /*aplica tamaño a la letra*/
+    font-size: 16px;
+
+    /*color al texto dentro boton*/
+    color: #fff;
+
+    /**/
+    position: relative;
+    z-index: 10;
+}
+
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+
+/*img de Mapa*/
+
+.contacto .col img {
+    /*el ancho de la imagen se acomoda al ancho definido de su padre*/
+    width: 100%;
+}
+
+
+/*Class = infor   informacion del contacto*/
+
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    width: fit-content;
+    left: 50%;
+    /*Mueve el contenedor o elemento por ejes x y eje y*/
+    transform: translate(-50%, -50%);
+}
