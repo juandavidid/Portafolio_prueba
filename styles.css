@@ -1408,6 +1408,7 @@ footer .redes a {
     transition: .3s;
 }
 
+/*Estilo a icono de la flecha */
 footer .arriba {
     /*Contenedor que sea tipo blocke*/
     display: block;
@@ -1435,4 +1436,124 @@ footer .arriba {
 
     /*tamaño al elemento*/
     font-size: 18px;
+}
+
+
+/*---------------------FINAL DEL FOOTER------------------------------------*/
+
+
+/*--SECCION RESPONSIVE----*/
+
+/* SECCION MENU*/
+@media screen and (max-width:989px) {
+
+    /*Se desaparece y no se muestra en el sitio web*/
+    nav {
+        display: none;
+    }
+
+    /*Se activa el contenedor de la estructura Responsive*/
+    .nav-responsive {
+        /*Elemento con posicion blocke*/
+        display: block;
+    }
+
+    /*Estilo y posicion al los items del menu inicio*/
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    /*El elementos ul se vuelve en posicion blocke es decir vertical*/
+    nav.responsive ul {
+        /*Elementos en blocke*/
+        display: block;
+    }
+
+    /*Estilo a los elemento del Menu */
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+
+    }
+
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    /*SECCION SOBRE MI*/
+
+    /*Los elementos se ubican en blocke*/
+    .sobremi .fila {
+        display: block;
+    }
+
+    /*Los elementos se acomodan cuando el ancho va cambiando dinamicamente*/
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+
+    /*SECCION SKILLS*/
+
+    .skills .fila {
+        display: block;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+    }
+
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+
+
+    /*SECCION CURRICULUM*/
+
+    .curriculum .fila {
+        display: block;
+    }
+
+    .curriculum .fila .col {
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 20px;
+    }
+
+
+    /*---SECCION PORTFOLIO---*/
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+
+    /*--SECCION CONTACTO--*/
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+
+
 }
