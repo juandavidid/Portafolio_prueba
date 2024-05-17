@@ -1171,8 +1171,6 @@ html {
 
 
 /*------------------SECCION CONTACTO---------------------------------------*/
-
-
 /*Class = contacto*/
 .contacto {
     /*permite colocar una Imagen de fondo*/
@@ -1312,4 +1310,129 @@ html {
     left: 50%;
     /*Mueve el contenedor o elemento por ejes x y eje y*/
     transform: translate(-50%, -50%);
+}
+
+
+/* Iniciamos desde aqui 17 de Mayo 2024 */
+
+/*NOTA : Corregir el ancho del contenedor que tiene los elementos
+         de ubicacion , correo y telefono  en la seccion CONTACTOS
+*/
+
+/*Class : ul*/
+.contacto .col .info ul {
+
+    /*Quita las viñetas o los puntos de los items */
+    list-style: none;
+
+}
+
+.contacto .col .info ul {
+    /*Generor un espacio externo*/
+    margin-bottom: 20px;
+}
+
+
+/* etiqueta <i> iconos  */
+.contacto .col .info ul li i {
+    /*color a los iconos*/
+    color: #1CB698;
+    display: inline-block;
+    /*Espacio externo del icono*/
+    margin-right: 20px;
+
+}
+
+/*-----------------FIN SECCION CONTACTO---------------------------------------*/
+
+
+/*-------------------SECCION FOOTER---------------------------------------------*/
+
+
+footer {
+    /*color de fondo*/
+    background-color: #252A2E;
+    color: #fff;
+
+    /*Espacio internos*/
+    padding: 50px 0 30px 0;
+
+    /*Centra los elementos*/
+    text-align: center;
+    position: relative;
+    /*su ancho sera el 100% de la pantalla*/
+    width: 100%;
+
+}
+
+
+footer .redes {
+    /*Espacio externo */
+    margin-bottom: 20px;
+}
+
+
+/*Estilo a los iconos de la redes sociales*/
+footer .redes a {
+    /*color a los  iconos */
+    color: #fff;
+
+    display: inline-block;
+
+    /*quita la linea que se genera cuando se coloca un Etiqueta <a></a>*/
+    text-decoration: none;
+
+    /*define el borde de los iconos*/
+    border: 1px solid #fff;
+
+    /*cambia la forma de las puntas o esquinas de los bordes de los iconos*/
+    border-radius: 100%;
+
+    /*le damos ancho al circulo de los iconos*/
+    width: 42px;
+
+    /*le damos altura al circulo de los iconos*/
+    height: 42px;
+
+    /*Se aplica un altura */
+    line-height: 42px;
+
+    /*Espacio externo de los iconos*/
+    margin: 40px 5px;
+
+    /*le da tamaño a los inconos*/
+    font-size: 20px;
+
+    /*Crea un efecto de transicion suve*/
+    /*como desplazar las palabara hacia los lados*/
+    transition: .3s;
+}
+
+footer .arriba {
+    /*Contenedor que sea tipo blocke*/
+    display: block;
+    /*ancho al contenedor*/
+    width: 50px;
+    /*altura al contenedor*/
+    height: 50px;
+    /*color de fondo*/
+    background-color: #1CB698;
+    /*Color a l icono*/
+    color: #fff;
+    /*Posicion que permite mover el contenedor*/
+    position: absolute;
+    /*Despla de izquierda a derecha*/
+    left: 50%;
+    transform: translateX(-50%);
+    /*Desplazamiento de abajo hacia arriba*/
+    top: -25px;
+
+    /*Las esquina cambian a circulo*/
+    border-radius: 50%;
+
+    /*Espacio entre lineas*/
+    line-height: 50px;
+
+    /*tamaño al elemento*/
+    font-size: 18px;
 }
