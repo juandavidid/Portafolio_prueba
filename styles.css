@@ -1458,6 +1458,8 @@ footer .arriba {
         display: block;
     }
 
+    /*Se muestra los items del Menu  cuando se agrega  el artributo 
+    class="responsive" en la etiqueta <nav ></nav> de la Estructura del Menu*/
     /*Estilo y posicion al los items del menu inicio*/
     nav.responsive {
         display: block;
